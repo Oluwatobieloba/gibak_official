@@ -68,21 +68,20 @@ img.emoji {
 
 
 /* BREAKPOINT: Desktop (BASE) */
-.grid-item.brxe-container {flex-basis: 250px; flex-grow: 2; flex-shrink: 1; min-width: 250px}
+.grid-item-m.brxe-div {display: flex; flex-basis: 250px; flex-shrink: 1; flex-grow: 2; min-width: 250px}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.grid-item.brxe-container {justify-content: center}
-.grid-item.brxe-container {align-items: stretch}
+.grid-item-m.brxe-div {display: flex}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.grid-item.brxe-div {flex-basis: 250px; flex-grow: 2; flex-shrink: 1; min-width: 250px}
+.grid-item-d.brxe-div {flex-basis: 2.5%; flex-grow: 2; flex-shrink: 1; min-width: 250px; display: flex}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.grid-item.brxe-div {justify-content: center}
-.grid-item.brxe-div {align-items: stretch}
+.grid-item-d.brxe-div {justify-content: center}
+.grid-item-d.brxe-div {align-items: stretch}
 }
 
 /* PAGE CSS */
@@ -229,11 +228,11 @@ img.emoji {
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-a30b6c.brxe-div {display: flex}
 .brxe-a30b6c.brxe-div {flex-direction: row}
 .brxe-a30b6c.brxe-div {justify-content: center}
 .brxe-a30b6c.brxe-div {align-items: stretch}
 .brxe-a30b6c.brxe-div {align-self: flex-start !important}
+.brxe-a30b6c.brxe-div {display: flex}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
@@ -281,11 +280,16 @@ img.emoji {
 
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-xjgbbo.brxe-div {display: flex; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff}
+.brxe-xjgbbo.brxe-div {border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff; display: flex}
 
+/* BREAKPOINT: Tablet portrait */
+@media (max-width: 991px) {
+.brxe-xjgbbo.brxe-div {display: flex}
+}
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
 .brxe-xjgbbo.brxe-div {width: 200px}
+.brxe-xjgbbo.brxe-div {display: none}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
@@ -317,126 +321,145 @@ img.emoji {
 
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-xbzpfc .brxe-wwvkcs.brxe-image {width: 80%}
+.brxe-fvgmhs .brxe-pblihs.brxe-image {width: 80%}
 
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-.brxe-xbzpfc .brxe-wwvkcs.brxe-image {object-fit: contain}
-.brxe-xbzpfc .brxe-wwvkcs.brxe-image img {object-fit: contain}
+.brxe-fvgmhs .brxe-pblihs.brxe-image {object-fit: contain}
+.brxe-fvgmhs .brxe-pblihs.brxe-image img {object-fit: contain}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-xbzpfc .brxe-iryiuj.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; overflow: hidden}
-
-/* BREAKPOINT: Mobile portrait */
-@media (max-width: 478px) {
-.brxe-xbzpfc .brxe-iryiuj.brxe-div {width: 70%}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-xbzpfc .brxe-xrgahu.brxe-heading {font-weight: 500; font-size: 1.5rem}
+.brxe-fvgmhs .brxe-sqduba.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; overflow: hidden}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-xbzpfc .brxe-xrgahu.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-xbzpfc .brxe-lbqfrk.brxe-heading {font-weight: 700; font-size: 1.5rem}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-xbzpfc .brxe-lbqfrk.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-xbzpfc .brxe-oiklit.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: .5rem; border-top-right-radius: .5rem; border-bottom-right-radius: .5rem; border-bottom-left-radius: .5rem}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-xbzpfc .brxe-oiklit.brxe-heading {font-weight: 500}
+.brxe-fvgmhs .brxe-sqduba.brxe-div {width: 70%}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-.brxe-xbzpfc .brxe-oiklit.brxe-heading {width: 100%}
-.brxe-xbzpfc .brxe-oiklit.brxe-heading {text-align: center}
+.brxe-fvgmhs .brxe-sqduba.brxe-div {width: 70%}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-xbzpfc .brxe-clhdko.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center}
-
-/* BREAKPOINT: Mobile portrait */
-@media (max-width: 478px) {
-.brxe-xbzpfc .brxe-clhdko.brxe-div {flex-direction: column}
-.brxe-xbzpfc .brxe-clhdko.brxe-div {align-items: flex-start}
-.brxe-xbzpfc .brxe-clhdko.brxe-div {justify-content: center}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-xbzpfc.brxe-div {display: none; width: 250px; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff}
+.brxe-fvgmhs .brxe-yuqaya.brxe-heading {font-weight: 500; font-size: 1.5rem}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-xbzpfc.brxe-div {width: 200px}
-}
-/* BREAKPOINT: Mobile portrait */
-@media (max-width: 478px) {
-.brxe-xbzpfc.brxe-div {width: 100%}
-.brxe-xbzpfc.brxe-div {flex-direction: row}
-.brxe-xbzpfc.brxe-div {justify-content: center}
-.brxe-xbzpfc.brxe-div {align-self: stretch !important; width: 100%}
-.brxe-xbzpfc.brxe-div {align-items: stretch}
-.brxe-xbzpfc.brxe-div {display: flex}
+.brxe-fvgmhs .brxe-yuqaya.brxe-heading {font-weight: 500}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-uvirgf .brxe-pwugue.brxe-heading {font-weight: 700; font-size: 1.5rem; margin-left: auto}
+.brxe-fvgmhs .brxe-rqbbxm.brxe-heading {font-weight: 700; font-size: 1.5rem}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-uvirgf .brxe-pwugue.brxe-heading {font-weight: 500}
+.brxe-fvgmhs .brxe-rqbbxm.brxe-heading {font-weight: 500}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-uvirgf .brxe-renvuc.brxe-image {width: 80%}
-
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-uvirgf .brxe-dvqgqi.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; width: 250px; height: 250px; overflow: hidden}
-
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-uvirgf .brxe-lmmvah.brxe-heading {font-weight: 500; font-size: 1.5rem}
+.brxe-fvgmhs .brxe-eejfod.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: .5rem; border-top-right-radius: .5rem; border-bottom-right-radius: .5rem; border-bottom-left-radius: .5rem}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-uvirgf .brxe-lmmvah.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-uvirgf .brxe-qvqriw.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-uvirgf .brxe-qvqriw.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-uvirgf .brxe-xruhfu.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center; padding-top: 1rem}
-
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-uvirgf.brxe-div {display: flex; width: 250px; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-uvirgf.brxe-div {width: 200px}
+.brxe-fvgmhs .brxe-eejfod.brxe-heading {font-weight: 500; text-align: center}
+.brxe-fvgmhs .brxe-eejfod.brxe-heading {width: 100%}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-.brxe-uvirgf.brxe-div {padding-top: 2rem; padding-bottom: 2rem}
-.brxe-uvirgf.brxe-div {width: 185px}
-.brxe-uvirgf.brxe-div {display: none}
+.brxe-fvgmhs .brxe-eejfod.brxe-heading {width: 100%}
+.brxe-fvgmhs .brxe-eejfod.brxe-heading {text-align: center}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-fvgmhs .brxe-qyofsz.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-fvgmhs .brxe-qyofsz.brxe-div {justify-content: center}
+.brxe-fvgmhs .brxe-qyofsz.brxe-div {align-items: flex-start}
+.brxe-fvgmhs .brxe-qyofsz.brxe-div {flex-direction: column}
+}
+/* BREAKPOINT: Mobile portrait */
+@media (max-width: 478px) {
+.brxe-fvgmhs .brxe-qyofsz.brxe-div {flex-direction: column}
+.brxe-fvgmhs .brxe-qyofsz.brxe-div {align-items: flex-start}
+.brxe-fvgmhs .brxe-qyofsz.brxe-div {justify-content: center}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-fvgmhs.brxe-div {width: 250px; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff; display: none}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-fvgmhs.brxe-div {flex-direction: row}
+.brxe-fvgmhs.brxe-div {justify-content: center}
+.brxe-fvgmhs.brxe-div {align-items: stretch}
+.brxe-fvgmhs.brxe-div {align-self: flex-start !important}
+.brxe-fvgmhs.brxe-div {display: flex}
+}
+/* BREAKPOINT: Mobile portrait */
+@media (max-width: 478px) {
+.brxe-fvgmhs.brxe-div {width: 100%}
+.brxe-fvgmhs.brxe-div {flex-direction: row}
+.brxe-fvgmhs.brxe-div {justify-content: center}
+.brxe-fvgmhs.brxe-div {align-self: stretch !important; width: 100%}
+.brxe-fvgmhs.brxe-div {align-items: stretch}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-zpyoug .brxe-dfhvjs.brxe-heading {font-weight: 700; font-size: 1.5rem; margin-left: auto}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-zpyoug .brxe-dfhvjs.brxe-heading {font-weight: 500}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-zpyoug .brxe-rnvfmu.brxe-image {width: 80%}
+
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-zpyoug .brxe-matyfj.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; width: 250px; height: 250px; overflow: hidden}
+
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-zpyoug .brxe-twdphe.brxe-heading {font-weight: 500; font-size: 1.5rem}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-zpyoug .brxe-twdphe.brxe-heading {font-weight: 500}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-zpyoug .brxe-edntlc.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-zpyoug .brxe-edntlc.brxe-heading {font-weight: 500}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-zpyoug .brxe-chzsiw.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center; padding-top: 1rem}
+
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-zpyoug.brxe-div {border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff; display: flex}
+
+/* BREAKPOINT: Tablet portrait */
+@media (max-width: 991px) {
+.brxe-zpyoug.brxe-div {display: flex}
+}
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-zpyoug.brxe-div {width: 200px}
+.brxe-zpyoug.brxe-div {display: none}
+}
+/* BREAKPOINT: Mobile portrait */
+@media (max-width: 478px) {
+.brxe-zpyoug.brxe-div {padding-top: 2rem; padding-bottom: 2rem}
+.brxe-zpyoug.brxe-div {width: 185px}
+.brxe-zpyoug.brxe-div {display: none}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
@@ -461,126 +484,145 @@ img.emoji {
 
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-swaxsq .brxe-bsfnsv.brxe-image {width: 80%}
+.brxe-lhmrge .brxe-htyzxa.brxe-image {width: 80%}
 
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-.brxe-swaxsq .brxe-bsfnsv.brxe-image {object-fit: contain}
-.brxe-swaxsq .brxe-bsfnsv.brxe-image img {object-fit: contain}
+.brxe-lhmrge .brxe-htyzxa.brxe-image {object-fit: contain}
+.brxe-lhmrge .brxe-htyzxa.brxe-image img {object-fit: contain}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-swaxsq .brxe-zvyrsa.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; overflow: hidden}
-
-/* BREAKPOINT: Mobile portrait */
-@media (max-width: 478px) {
-.brxe-swaxsq .brxe-zvyrsa.brxe-div {width: 70%}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-swaxsq .brxe-ykytun.brxe-heading {font-weight: 500; font-size: 1.5rem}
+.brxe-lhmrge .brxe-rfwoar.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; overflow: hidden}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-swaxsq .brxe-ykytun.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-swaxsq .brxe-bwytyy.brxe-heading {font-weight: 700; font-size: 1.5rem}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-swaxsq .brxe-bwytyy.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-swaxsq .brxe-arnpcf.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: .5rem; border-top-right-radius: .5rem; border-bottom-right-radius: .5rem; border-bottom-left-radius: .5rem}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-swaxsq .brxe-arnpcf.brxe-heading {font-weight: 500}
+.brxe-lhmrge .brxe-rfwoar.brxe-div {width: 70%}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-.brxe-swaxsq .brxe-arnpcf.brxe-heading {width: 100%}
-.brxe-swaxsq .brxe-arnpcf.brxe-heading {text-align: center}
+.brxe-lhmrge .brxe-rfwoar.brxe-div {width: 70%}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-swaxsq .brxe-vccssd.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center}
-
-/* BREAKPOINT: Mobile portrait */
-@media (max-width: 478px) {
-.brxe-swaxsq .brxe-vccssd.brxe-div {flex-direction: column}
-.brxe-swaxsq .brxe-vccssd.brxe-div {align-items: flex-start}
-.brxe-swaxsq .brxe-vccssd.brxe-div {justify-content: center}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-swaxsq.brxe-div {display: none; width: 250px; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff}
+.brxe-lhmrge .brxe-xwzhrz.brxe-heading {font-weight: 500; font-size: 1.5rem}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-swaxsq.brxe-div {width: 200px}
-}
-/* BREAKPOINT: Mobile portrait */
-@media (max-width: 478px) {
-.brxe-swaxsq.brxe-div {width: 100%}
-.brxe-swaxsq.brxe-div {flex-direction: row}
-.brxe-swaxsq.brxe-div {justify-content: center}
-.brxe-swaxsq.brxe-div {align-self: stretch !important; width: 100%}
-.brxe-swaxsq.brxe-div {align-items: stretch}
-.brxe-swaxsq.brxe-div {display: flex}
+.brxe-lhmrge .brxe-xwzhrz.brxe-heading {font-weight: 500}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-eighgm .brxe-tvtlcc.brxe-heading {font-weight: 700; font-size: 1.5rem; margin-left: auto}
+.brxe-lhmrge .brxe-tpoapn.brxe-heading {font-weight: 700; font-size: 1.5rem}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-eighgm .brxe-tvtlcc.brxe-heading {font-weight: 500}
+.brxe-lhmrge .brxe-tpoapn.brxe-heading {font-weight: 500}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
-.brxe-eighgm .brxe-jmghzx.brxe-image {width: 80%}
-
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-eighgm .brxe-sntywy.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; width: 250px; height: 250px; overflow: hidden}
-
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-eighgm .brxe-odhkqj.brxe-heading {font-weight: 500; font-size: 1.5rem}
+.brxe-lhmrge .brxe-xjltcx.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: .5rem; border-top-right-radius: .5rem; border-bottom-right-radius: .5rem; border-bottom-left-radius: .5rem}
 
 /* BREAKPOINT: Mobile landscape */
 @media (max-width: 767px) {
-.brxe-eighgm .brxe-odhkqj.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-eighgm .brxe-ocrnin.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-eighgm .brxe-ocrnin.brxe-heading {font-weight: 500}
-}
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-eighgm .brxe-eanzqr.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center; padding-top: 1rem}
-
-
-/* BREAKPOINT: Desktop (BASE) */
-.brxe-eighgm.brxe-div {display: flex; width: 250px; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff}
-
-/* BREAKPOINT: Mobile landscape */
-@media (max-width: 767px) {
-.brxe-eighgm.brxe-div {width: 200px}
+.brxe-lhmrge .brxe-xjltcx.brxe-heading {font-weight: 500; text-align: center}
+.brxe-lhmrge .brxe-xjltcx.brxe-heading {width: 100%}
 }
 /* BREAKPOINT: Mobile portrait */
 @media (max-width: 478px) {
-.brxe-eighgm.brxe-div {padding-top: 2rem; padding-bottom: 2rem}
-.brxe-eighgm.brxe-div {width: 185px}
-.brxe-eighgm.brxe-div {display: none}
+.brxe-lhmrge .brxe-xjltcx.brxe-heading {width: 100%}
+.brxe-lhmrge .brxe-xjltcx.brxe-heading {text-align: center}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-lhmrge .brxe-hkilxl.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-lhmrge .brxe-hkilxl.brxe-div {justify-content: center}
+.brxe-lhmrge .brxe-hkilxl.brxe-div {align-items: flex-start}
+.brxe-lhmrge .brxe-hkilxl.brxe-div {flex-direction: column}
+}
+/* BREAKPOINT: Mobile portrait */
+@media (max-width: 478px) {
+.brxe-lhmrge .brxe-hkilxl.brxe-div {flex-direction: column}
+.brxe-lhmrge .brxe-hkilxl.brxe-div {align-items: flex-start}
+.brxe-lhmrge .brxe-hkilxl.brxe-div {justify-content: center}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-lhmrge.brxe-div {width: 250px; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff; display: none}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-lhmrge.brxe-div {flex-direction: row}
+.brxe-lhmrge.brxe-div {justify-content: center}
+.brxe-lhmrge.brxe-div {align-items: stretch}
+.brxe-lhmrge.brxe-div {align-self: flex-start !important}
+.brxe-lhmrge.brxe-div {display: flex}
+}
+/* BREAKPOINT: Mobile portrait */
+@media (max-width: 478px) {
+.brxe-lhmrge.brxe-div {width: 100%}
+.brxe-lhmrge.brxe-div {flex-direction: row}
+.brxe-lhmrge.brxe-div {justify-content: center}
+.brxe-lhmrge.brxe-div {align-self: stretch !important; width: 100%}
+.brxe-lhmrge.brxe-div {align-items: stretch}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-iqazpu .brxe-ynqbth.brxe-heading {font-weight: 700; font-size: 1.5rem; margin-left: auto}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-iqazpu .brxe-ynqbth.brxe-heading {font-weight: 500}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-iqazpu .brxe-afykyp.brxe-image {width: 80%}
+
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-iqazpu .brxe-sjnmvr.brxe-div {display: flex; align-self: center !important; justify-content: center; align-items: center; width: 250px; height: 250px; overflow: hidden}
+
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-iqazpu .brxe-ujkbxg.brxe-heading {font-weight: 500; font-size: 1.5rem}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-iqazpu .brxe-ujkbxg.brxe-heading {font-weight: 500}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-iqazpu .brxe-qnkmti.brxe-heading {font-weight: 500; font-size: 1.5rem; color: #ffffff; padding-top: 1rem; padding-right: 2.5rem; padding-bottom: 1rem; padding-left: 2.5rem; background-color: #292929; border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem}
+
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-iqazpu .brxe-qnkmti.brxe-heading {font-weight: 500}
+}
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-iqazpu .brxe-dpllrn.brxe-div {display: flex; justify-content: space-between; width: 100%; align-items: center; padding-top: 1rem}
+
+
+/* BREAKPOINT: Desktop (BASE) */
+.brxe-iqazpu.brxe-div {border-top-left-radius: 1rem; border-top-right-radius: 1rem; border-bottom-right-radius: 1rem; border-bottom-left-radius: 1rem; padding-top: 1rem; padding-right: 1rem; padding-bottom: 1rem; padding-left: 1rem; justify-content: flex-start; align-items: center; align-self: center !important; flex-direction: column; max-height: 300px; background-color: #ffffff; display: flex}
+
+/* BREAKPOINT: Tablet portrait */
+@media (max-width: 991px) {
+.brxe-iqazpu.brxe-div {display: flex}
+}
+/* BREAKPOINT: Mobile landscape */
+@media (max-width: 767px) {
+.brxe-iqazpu.brxe-div {width: 200px}
+.brxe-iqazpu.brxe-div {display: none}
+}
+/* BREAKPOINT: Mobile portrait */
+@media (max-width: 478px) {
+.brxe-iqazpu.brxe-div {padding-top: 2rem; padding-bottom: 2rem}
+.brxe-iqazpu.brxe-div {width: 185px}
+.brxe-iqazpu.brxe-div {display: none}
 }
 
 /* BREAKPOINT: Desktop (BASE) */
@@ -709,8 +751,8 @@ img.emoji {
 <div id="brxe-0c3c3e" class="brxe-div tab-style tab-title bricks-lazy-hidden"><div id="brxe-9f68e6" class="brxe-text-basic letter-space-s">FRAME</div></div>
 </div>
 <div id="brxe-7ca372" class="brxe-block tab-content bricks-lazy-hidden">
-<div id="brxe-edad2a" class="brxe-block tab-pane bricks-lazy-hidden"><div id="brxe-a9daa8" class="brxe-container grid-item bricks-lazy-hidden">
-<div class="brxe-a30b6c brxe-div shadow grid-item bricks-lazy-hidden">
+<div id="brxe-edad2a" class="brxe-block tab-pane bricks-lazy-hidden"><div id="brxe-a9daa8" class="brxe-container bricks-lazy-hidden">
+<div class="brxe-a30b6c brxe-div shadow grid-item-m bricks-lazy-hidden">
 <div class="brxe-7b071e brxe-div bricks-lazy-hidden"><a class="brxe-7355fe brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="7355fe" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-1_N4t9Xw8ek.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279709"></a></div>
 <div class="brxe-01b0cb brxe-div bricks-lazy-hidden">
 <h5 class="brxe-7d2197 brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">Ade Ori</a></h5>
@@ -718,7 +760,7 @@ img.emoji {
 <h5 class="brxe-4a80af brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-a30b6c brxe-div shadow grid-item bricks-lazy-hidden">
+<div class="brxe-a30b6c brxe-div shadow grid-item-m bricks-lazy-hidden">
 <div class="brxe-7b071e brxe-div bricks-lazy-hidden"><a class="brxe-7355fe brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="7355fe" data-bricks-lightbox-index="1" src="https://ik.imagekit.io/wpdonut/Gibak-outfit-2_lsUajMWOU.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279725"></a></div>
 <div class="brxe-01b0cb brxe-div bricks-lazy-hidden">
 <h5 class="brxe-7d2197 brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">The Crowned One</a></h5>
@@ -726,7 +768,7 @@ img.emoji {
 <h5 class="brxe-4a80af brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-a30b6c brxe-div shadow grid-item bricks-lazy-hidden">
+<div class="brxe-a30b6c brxe-div shadow grid-item-m bricks-lazy-hidden">
 <div class="brxe-7b071e brxe-div bricks-lazy-hidden"><a class="brxe-7355fe brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="7355fe" data-bricks-lightbox-index="2" src="https://ik.imagekit.io/wpdonut/Gibak-outfit-3_9iJIJRmNh.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279717"></a></div>
 <div class="brxe-01b0cb brxe-div bricks-lazy-hidden">
 <h5 class="brxe-7d2197 brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">The Queen</a></h5>
@@ -734,7 +776,7 @@ img.emoji {
 <h5 class="brxe-4a80af brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-a30b6c brxe-div shadow grid-item bricks-lazy-hidden">
+<div class="brxe-a30b6c brxe-div shadow grid-item-m bricks-lazy-hidden">
 <div class="brxe-7b071e brxe-div bricks-lazy-hidden"><a class="brxe-7355fe brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="7355fe" data-bricks-lightbox-index="3" src="https://ik.imagekit.io/wpdonut/Gibak-outfit-4_MSvgzcSIK.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279765"></a></div>
 <div class="brxe-01b0cb brxe-div bricks-lazy-hidden">
 <h5 class="brxe-7d2197 brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">His Princess</a></h5>
@@ -742,7 +784,7 @@ img.emoji {
 <h5 class="brxe-4a80af brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-xjgbbo brxe-div shadow grid-item bricks-lazy-hidden">
+<div class="brxe-xjgbbo brxe-div shadow grid-item-d bricks-lazy-hidden">
 <h5 class="brxe-sotdbi brxe-heading">₦200,000</h5>
 <div class="brxe-cgtzgs brxe-div bricks-lazy-hidden"><a class="brxe-digipt brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="digipt" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-1_N4t9Xw8ek.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279709"></a></div>
 <div class="brxe-jnbucj brxe-div bricks-lazy-hidden">
@@ -750,7 +792,7 @@ img.emoji {
 <h5 class="brxe-qrvaex brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-xjgbbo brxe-div shadow grid-item bricks-lazy-hidden">
+<div class="brxe-xjgbbo brxe-div shadow grid-item-d bricks-lazy-hidden">
 <h5 class="brxe-sotdbi brxe-heading">₦200,000</h5>
 <div class="brxe-cgtzgs brxe-div bricks-lazy-hidden"><a class="brxe-digipt brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="digipt" data-bricks-lightbox-index="1" src="https://ik.imagekit.io/wpdonut/Gibak-outfit-2_lsUajMWOU.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279725"></a></div>
 <div class="brxe-jnbucj brxe-div bricks-lazy-hidden">
@@ -758,7 +800,7 @@ img.emoji {
 <h5 class="brxe-qrvaex brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-xjgbbo brxe-div shadow grid-item bricks-lazy-hidden">
+<div class="brxe-xjgbbo brxe-div shadow grid-item-d bricks-lazy-hidden">
 <h5 class="brxe-sotdbi brxe-heading">₦20,000</h5>
 <div class="brxe-cgtzgs brxe-div bricks-lazy-hidden"><a class="brxe-digipt brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="digipt" data-bricks-lightbox-index="2" src="https://ik.imagekit.io/wpdonut/Gibak-outfit-3_9iJIJRmNh.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279717"></a></div>
 <div class="brxe-jnbucj brxe-div bricks-lazy-hidden">
@@ -766,7 +808,7 @@ img.emoji {
 <h5 class="brxe-qrvaex brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-xjgbbo brxe-div shadow grid-item bricks-lazy-hidden">
+<div class="brxe-xjgbbo brxe-div shadow grid-item-d bricks-lazy-hidden">
 <h5 class="brxe-sotdbi brxe-heading">₦20,000</h5>
 <div class="brxe-cgtzgs brxe-div bricks-lazy-hidden"><a class="brxe-digipt brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="digipt" data-bricks-lightbox-index="3" src="https://ik.imagekit.io/wpdonut/Gibak-outfit-4_MSvgzcSIK.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279765"></a></div>
 <div class="brxe-jnbucj brxe-div bricks-lazy-hidden">
@@ -776,38 +818,38 @@ img.emoji {
 </div>
 </div></div>
 <div id="brxe-01be1c" class="brxe-block tab-pane bricks-lazy-hidden"><div id="brxe-sddbwb" class="brxe-container bricks-lazy-hidden">
-<div class="brxe-xbzpfc brxe-div shadow bricks-lazy-hidden">
-<div class="brxe-iryiuj brxe-div bricks-lazy-hidden"><a class="brxe-wwvkcs brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="wwvkcs" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-4_MSvgzcSIK.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279765"></a></div>
-<div class="brxe-clhdko brxe-div bricks-lazy-hidden">
-<h5 class="brxe-xrgahu brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">His Princess</a></h5>
-<h5 class="brxe-lbqfrk brxe-heading owl-s">₦20,000</h5>
-<h5 class="brxe-oiklit brxe-heading"><a target="_blank">BUY</a></h5>
+<div class="brxe-fvgmhs brxe-div shadow grid-item-m bricks-lazy-hidden">
+<div class="brxe-sqduba brxe-div bricks-lazy-hidden"><a class="brxe-pblihs brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="pblihs" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-4_MSvgzcSIK.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279765"></a></div>
+<div class="brxe-qyofsz brxe-div bricks-lazy-hidden">
+<h5 class="brxe-yuqaya brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">His Princess</a></h5>
+<h5 class="brxe-rqbbxm brxe-heading owl-s">₦20,000</h5>
+<h5 class="brxe-eejfod brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-uvirgf brxe-div shadow bricks-lazy-hidden">
-<h5 class="brxe-pwugue brxe-heading">₦20,000</h5>
-<div class="brxe-dvqgqi brxe-div bricks-lazy-hidden"><a class="brxe-renvuc brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="renvuc" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-4_MSvgzcSIK.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279765"></a></div>
-<div class="brxe-xruhfu brxe-div bricks-lazy-hidden">
-<h5 class="brxe-lmmvah brxe-heading"><a href="/{acf_product_product_link}" target="_blank">His Princess</a></h5>
-<h5 class="brxe-qvqriw brxe-heading"><a target="_blank">BUY</a></h5>
+<div class="brxe-zpyoug brxe-div shadow grid-item-d bricks-lazy-hidden">
+<h5 class="brxe-dfhvjs brxe-heading">₦20,000</h5>
+<div class="brxe-matyfj brxe-div bricks-lazy-hidden"><a class="brxe-rnvfmu brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="rnvfmu" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-4_MSvgzcSIK.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279765"></a></div>
+<div class="brxe-chzsiw brxe-div bricks-lazy-hidden">
+<h5 class="brxe-twdphe brxe-heading"><a href="/{acf_product_product_link}" target="_blank">His Princess</a></h5>
+<h5 class="brxe-edntlc brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
 </div></div>
 <div id="brxe-00a918" class="brxe-block tab-pane bricks-lazy-hidden"><div id="brxe-gvuoem" class="brxe-container bricks-lazy-hidden">
-<div class="brxe-swaxsq brxe-div shadow bricks-lazy-hidden">
-<div class="brxe-zvyrsa brxe-div bricks-lazy-hidden"><a class="brxe-bsfnsv brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="bsfnsv" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-3_9iJIJRmNh.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279717"></a></div>
-<div class="brxe-vccssd brxe-div bricks-lazy-hidden">
-<h5 class="brxe-ykytun brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">Black Girl</a></h5>
-<h5 class="brxe-bwytyy brxe-heading owl-s">₦20,000</h5>
-<h5 class="brxe-arnpcf brxe-heading"><a target="_blank">BUY</a></h5>
+<div class="brxe-lhmrge brxe-div shadow grid-item-m bricks-lazy-hidden">
+<div class="brxe-rfwoar brxe-div bricks-lazy-hidden"><a class="brxe-htyzxa brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="htyzxa" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-3_9iJIJRmNh.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279717"></a></div>
+<div class="brxe-hkilxl brxe-div bricks-lazy-hidden">
+<h5 class="brxe-xwzhrz brxe-heading owl-s"><a href="/{acf_product_product_link}" target="_blank">Black Girl</a></h5>
+<h5 class="brxe-tpoapn brxe-heading owl-s">₦20,000</h5>
+<h5 class="brxe-xjltcx brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
-<div class="brxe-eighgm brxe-div shadow bricks-lazy-hidden">
-<h5 class="brxe-tvtlcc brxe-heading">₦20,000</h5>
-<div class="brxe-sntywy brxe-div bricks-lazy-hidden"><a class="brxe-jmghzx brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="jmghzx" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-3_9iJIJRmNh.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279717"></a></div>
-<div class="brxe-eanzqr brxe-div bricks-lazy-hidden">
-<h5 class="brxe-odhkqj brxe-heading"><a href="/{acf_product_product_link}" target="_blank">Black Girl</a></h5>
-<h5 class="brxe-ocrnin brxe-heading"><a target="_blank">BUY</a></h5>
+<div class="brxe-iqazpu brxe-div shadow grid-item-d bricks-lazy-hidden">
+<h5 class="brxe-ynqbth brxe-heading">₦20,000</h5>
+<div class="brxe-sjnmvr brxe-div bricks-lazy-hidden"><a class="brxe-afykyp brxe-image"><img class="css-filter bricks-lightbox size-large" data-bricks-lightbox-source="https://ik.imagekit.io/wpdonut/wp-content/themes/bricks/assets/images/placeholder-image-800x600.jpg" data-bricks-lightbox-width="800" data-bricks-lightbox-height="600" data-bricks-lightbox-id="afykyp" data-bricks-lightbox-index src="https://ik.imagekit.io/wpdonut/Gibak-outfit-3_9iJIJRmNh.jpeg?ik-sdk-version=javascript-1.4.3&#038;updatedAt=1666797279717"></a></div>
+<div class="brxe-dpllrn brxe-div bricks-lazy-hidden">
+<h5 class="brxe-ujkbxg brxe-heading"><a href="/{acf_product_product_link}" target="_blank">Black Girl</a></h5>
+<h5 class="brxe-qnkmti brxe-heading"><a target="_blank">BUY</a></h5>
 </div>
 </div>
 </div></div>
